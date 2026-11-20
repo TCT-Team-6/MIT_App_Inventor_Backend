@@ -1,0 +1,13 @@
+model,category,photos,acc_25km,acc_750km
+claude-opus-5-5,night residential,4,0.0,0.0
+claude-opus-5-5,parking lot,4,0.0,0.0
+claude-opus-5-5,school field,4,0.0,0.0
+claude-opus-5-5,urban park,1,0.0,0.0
+claude-sonnet-5-5,night residential,4,0.75,0.75
+claude-sonnet-5-5,parking lot,4,1.0,1.0
+claude-sonnet-5-5,school field,4,1.0,1.0
+claude-sonnet-5-5,urban park,1,1.0,1.0
+claude-haiku-5-5,night residential,4,0.25,0.5
+claude-haiku-5-5,parking lot,4,0.25,1.0
+claude-haiku-5-5,school field,4,1.0,1.0
+claude-haiku-5-5,urban park,1,1.0,1.0
