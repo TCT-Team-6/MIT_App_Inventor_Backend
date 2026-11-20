@@ -1,4 +1,4 @@
 model,photos,failed,acc_1km,acc_5km,acc_10km,acc_25km,acc_200km,acc_750km,acc_2500km,ai_only_acc_25km,ai_only_acc_750km,median_error_km,country_accuracy,mean_confidence,confidence_when_correct,confidence_when_wrong,brier_25km,median_seconds
-claude-opus-5-5,5,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,1.5
-claude-sonnet-5-5,5,0,0.2,0.4,0.4,0.4,1.0,1.0,1.0,0.8,1.0,115.0,1.0,0.698,0.806,0.626,0.2588,12.6
-claude-haiku-5-5,5,0,0.4,0.4,0.4,0.4,1.0,1.0,1.0,0.8,1.0,112.9,1.0,0.668,0.891,0.519,0.2595,19.3
+claude-opus-5-5,5,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,1.4
+claude-sonnet-5-5,5,0,0.6,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.6,0.824,0.824,,0.0331,12.7
+claude-haiku-5-5,5,0,0.6,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.912,0.912,,0.0095,19.3
