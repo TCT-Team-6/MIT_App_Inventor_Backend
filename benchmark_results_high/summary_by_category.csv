@@ -1,0 +1,5 @@
+model,category,photos,acc_25km,acc_750km
+claude-sonnet-5-5,canyon overlook,4,1.0,1.0
+claude-sonnet-5-5,slot canyon,1,1.0,1.0
+claude-haiku-5-5,canyon overlook,4,1.0,1.0
+claude-haiku-5-5,slot canyon,1,1.0,1.0

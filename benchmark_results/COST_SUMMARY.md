@@ -4,7 +4,7 @@ Cost of the benchmark run in this folder, and what a 50-photo run would cost at 
 
 - **Source:** `summary_by_model.csv` in this folder (run settings read from `results.csv`).
 - **Run date:** 2026-11-24.
-- **Run settings:** 3 sample(s) per photo, Claude effort `medium`. That is 3 samples (the full-run default, not `--quick`), at the effort level set by the `CLAUDE_EFFORT` environment variable in the environment the run used. The pipeline's default effort is `high`, which uses more thinking tokens, so a run at `high` would likely cost more than this. That hasn't been measured.
+- **Run settings:** 3 sample(s) per photo, Claude effort `medium`. This is a full run, not `--quick`. The effort level comes from the `CLAUDE_EFFORT` environment variable; the pipeline's default is `high`.
 - **Photos:** 5 photos (`benchmark-kit/grand-canyon/manifest.csv`). Each was run once per model.
 
 ## Cost of this run
@@ -28,6 +28,17 @@ Cost of the benchmark run in this folder, and what a 50-photo run would cost at 
 
 - **Method:** the projection multiplies this run's cost per photo by 50. It assumes the 50 photos use about as many tokens as these did.
 - **Excluded models:** the total covers only the models listed. `claude-opus-5-5`, the GPT models and the Gemini models were not in this run, so they have no cost here.
+
+## Compared with the `benchmark_results_high/` run
+
+Same 5 photos and models, 3 samples per photo; only the effort level differs.
+
+| model | cost / photo (this run, `medium`) | cost / photo (`benchmark_results_high/`, `high`) | avg output tokens (this run) | avg output tokens (other) | 50 photos (this run) | 50 photos (other) |
+|---|---|---|---|---|---|---|
+| `claude-sonnet-5-5` | $0.0442 | $0.0479 | 3,157 | 3,522 | $2.2110 | $2.3940 |
+| `claude-haiku-5-5` | $0.0035 | $0.0041 | 5,799 | 6,889 | $0.1765 | $0.2040 |
+
+The two runs are separate model calls, so part of any difference is ordinary run-to-run variation.
 
 ## Pricing assumptions
 
