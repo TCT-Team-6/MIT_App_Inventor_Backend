@@ -1,0 +1,21 @@
+model,category,photos,acc_25km,acc_750km
+gpt-4o,night residential,4,1.0,1.0
+gpt-4o,parking lot,4,1.0,1.0
+gpt-4o,school field,4,1.0,1.0
+gpt-4o,urban park,1,1.0,1.0
+gpt-6.1-terra,night residential,4,1.0,1.0
+gpt-6.1-terra,parking lot,4,1.0,1.0
+gpt-6.1-terra,school field,4,1.0,1.0
+gpt-6.1-terra,urban park,1,1.0,1.0
+gpt-6.2-sol,night residential,4,0.75,0.75
+gpt-6.2-sol,parking lot,4,1.0,1.0
+gpt-6.2-sol,school field,4,1.0,1.0
+gpt-6.2-sol,urban park,1,1.0,1.0
+gemini-3.8-flash,night residential,4,0.25,0.25
+gemini-3.8-flash,parking lot,4,1.0,1.0
+gemini-3.8-flash,school field,4,1.0,1.0
+gemini-3.8-flash,urban park,1,1.0,1.0
+gemini-3.5-flash-lite,night residential,4,0.0,0.0
+gemini-3.5-flash-lite,parking lot,4,1.0,1.0
+gemini-3.5-flash-lite,school field,4,1.0,1.0
+gemini-3.5-flash-lite,urban park,1,1.0,1.0
