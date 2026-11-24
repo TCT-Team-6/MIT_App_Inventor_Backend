@@ -1,0 +1,3 @@
+model,photos,failed,acc_1km,acc_5km,acc_10km,acc_25km,acc_200km,acc_750km,acc_2500km,ai_only_acc_25km,ai_only_acc_750km,median_error_km,country_accuracy,mean_confidence,confidence_when_correct,confidence_when_wrong,brier_25km,median_seconds,total_input_tokens,total_output_tokens,total_api_calls,total_cost_usd,cost_per_photo_usd
+claude-sonnet-5-5,5,0,0.2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.7,1.0,0.78,0.78,,0.0493,16.3,31629,15785,15,0.2211,0.04422
+claude-haiku-5-5,5,0,0.6,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.1,1.0,0.917,0.917,,0.0084,24.2,31629,28993,15,0.0177,0.00353
