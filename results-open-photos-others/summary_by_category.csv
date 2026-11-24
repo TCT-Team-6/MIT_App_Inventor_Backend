@@ -1,0 +1,46 @@
+model,category,photos,acc_25km,acc_750km
+gpt-4o,city view,1,1.0,1.0
+gpt-4o,coast,1,1.0,1.0
+gpt-4o,mountain hotel,1,1.0,1.0
+gpt-4o,mountain pass road,1,1.0,1.0
+gpt-4o,old town street,1,1.0,1.0
+gpt-4o,railway platform,1,0.0,1.0
+gpt-4o,residential street,1,0.0,1.0
+gpt-4o,rural path,1,0.0,1.0
+gpt-4o,town street,1,0.0,1.0
+gpt-6.1-terra,city view,1,1.0,1.0
+gpt-6.1-terra,coast,1,1.0,1.0
+gpt-6.1-terra,mountain hotel,1,1.0,1.0
+gpt-6.1-terra,mountain pass road,1,1.0,1.0
+gpt-6.1-terra,old town street,1,1.0,1.0
+gpt-6.1-terra,railway platform,1,1.0,1.0
+gpt-6.1-terra,residential street,1,1.0,1.0
+gpt-6.1-terra,rural path,1,0.0,0.0
+gpt-6.1-terra,town street,1,0.0,1.0
+gpt-6.2-sol,city view,1,1.0,1.0
+gpt-6.2-sol,coast,1,1.0,1.0
+gpt-6.2-sol,mountain hotel,1,1.0,1.0
+gpt-6.2-sol,mountain pass road,1,1.0,1.0
+gpt-6.2-sol,old town street,1,1.0,1.0
+gpt-6.2-sol,railway platform,1,1.0,1.0
+gpt-6.2-sol,residential street,1,1.0,1.0
+gpt-6.2-sol,rural path,1,0.0,0.0
+gpt-6.2-sol,town street,1,1.0,1.0
+gemini-3.8-flash,city view,1,1.0,1.0
+gemini-3.8-flash,coast,1,0.0,1.0
+gemini-3.8-flash,mountain hotel,1,1.0,1.0
+gemini-3.8-flash,mountain pass road,1,1.0,1.0
+gemini-3.8-flash,old town street,1,1.0,1.0
+gemini-3.8-flash,railway platform,1,0.0,1.0
+gemini-3.8-flash,residential street,1,1.0,1.0
+gemini-3.8-flash,rural path,1,0.0,0.0
+gemini-3.8-flash,town street,1,0.0,1.0
+gemini-3.5-flash-lite,city view,1,1.0,1.0
+gemini-3.5-flash-lite,coast,1,1.0,1.0
+gemini-3.5-flash-lite,mountain hotel,1,1.0,1.0
+gemini-3.5-flash-lite,mountain pass road,1,1.0,1.0
+gemini-3.5-flash-lite,old town street,1,1.0,1.0
+gemini-3.5-flash-lite,railway platform,1,1.0,1.0
+gemini-3.5-flash-lite,residential street,1,0.0,1.0
+gemini-3.5-flash-lite,rural path,1,0.0,0.0
+gemini-3.5-flash-lite,town street,1,0.0,1.0
