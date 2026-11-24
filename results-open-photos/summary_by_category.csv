@@ -1,0 +1,19 @@
+model,category,photos,acc_25km,acc_750km
+claude-sonnet-5-5,city view,1,1.0,1.0
+claude-sonnet-5-5,coast,1,1.0,1.0
+claude-sonnet-5-5,mountain hotel,1,1.0,1.0
+claude-sonnet-5-5,mountain pass road,1,1.0,1.0
+claude-sonnet-5-5,old town street,1,1.0,1.0
+claude-sonnet-5-5,railway platform,1,1.0,1.0
+claude-sonnet-5-5,residential street,1,0.0,1.0
+claude-sonnet-5-5,rural path,1,0.0,0.0
+claude-sonnet-5-5,town street,1,1.0,1.0
+claude-haiku-5-5,city view,1,1.0,1.0
+claude-haiku-5-5,coast,1,1.0,1.0
+claude-haiku-5-5,mountain hotel,1,1.0,1.0
+claude-haiku-5-5,mountain pass road,1,1.0,1.0
+claude-haiku-5-5,old town street,1,1.0,1.0
+claude-haiku-5-5,railway platform,1,1.0,1.0
+claude-haiku-5-5,residential street,1,1.0,1.0
+claude-haiku-5-5,rural path,1,0.0,0.0
+claude-haiku-5-5,town street,1,0.0,1.0
