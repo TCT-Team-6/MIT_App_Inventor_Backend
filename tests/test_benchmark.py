@@ -90,5 +90,23 @@ class Run(unittest.TestCase):
         self.assertEqual(rows[1]["input_tokens"], "100")
 
 
+class Reprice(unittest.TestCase):
+    def test_report_prices_rows_with_tokens_but_no_cost(self):
+        out = Path(tempfile.mkdtemp())
+        with (out / "results.csv").open("w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=benchmark.FIELDS)
+            w.writeheader()
+            w.writerow({"file": "a.jpg", "model": "claude-sonnet-5-5", "error": "",
+                        "input_tokens": 1_000_000, "output_tokens": 0, "cost_usd": ""})
+            w.writerow({"file": "b.jpg", "model": "claude-sonnet-5-5", "error": "",
+                        "input_tokens": 1_000_000, "output_tokens": 0, "cost_usd": "9.99"})
+            w.writerow({"file": "c.jpg", "model": "no-such-model", "error": "",
+                        "input_tokens": 10, "output_tokens": 10, "cost_usd": ""})
+        rows = {r["file"]: r for r in benchmark._read_results(out)}
+        self.assertAlmostEqual(float(rows["a.jpg"]["cost_usd"]), 2.0)   # filled from tokens
+        self.assertEqual(rows["b.jpg"]["cost_usd"], "9.99")               # existing cost kept
+        self.assertEqual(rows["c.jpg"]["cost_usd"], "")                   # still no price
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,7 +1,11 @@
 {
-  "_note": "USD per 1M tokens, used by eval/benchmark.py to fill cost_usd. Edit to match your provider's current price list. A model missing here still gets token counts; its cost is left blank. cache_read / cache_write default to the input price when omitted (the pipeline does not use prompt caching, so these are normally 0 tokens). Claude prices: Anthropic API list prices as of 2026-11; Haiku 5.5 is for prompts up to 100K tokens. gpt-4o: OpenAI list price; check before relying on it.",
-  "claude-opus-5-5":   {"input": 4.00, "output": 20.00, "cache_read": 0.20},
-  "claude-sonnet-5-5": {"input": 2.00, "output": 10.00, "cache_read": 0.10},
-  "claude-haiku-5-5":  {"input": 0.10, "output": 0.50},
-  "gpt-4o":            {"input": 2.50, "output": 10.00, "cache_read": 1.25}
+  "_note": "USD per 1M tokens, used by eval/benchmark.py to fill cost_usd. Standard (non-batch) list prices, checked 2026-11-24 on the providers' pricing pages. Edit to match current prices. A model missing here still gets token counts; its cost is left blank. cache_read / cache_write default to the input price when omitted (the pipeline does not use prompt caching, so these are normally 0 tokens). Output prices cover thinking/reasoning tokens, which the benchmark counts as output. Claude: Anthropic API; Haiku 5.5 price is for prompts up to 100K tokens. OpenAI: developers.openai.com/api/docs/pricing; GPT-6 prices are for prompts up to 272K input tokens; gpt-4o is marked deprecated. Gemini: ai.google.dev/gemini-api/docs/pricing; gemini-3.8-flash is an introductory price until 2026-12-31 and becomes input 1.50 / output 7.50 on 2027-01-01.",
+  "claude-opus-5-5":       {"input": 4.00, "output": 20.00, "cache_read": 0.20},
+  "claude-sonnet-5-5":     {"input": 2.00, "output": 10.00, "cache_read": 0.10},
+  "claude-haiku-5-5":      {"input": 0.10, "output": 0.50},
+  "gpt-4o":                {"input": 2.50, "output": 10.00, "cache_read": 1.25},
+  "gpt-6.1-terra":         {"input": 1.00, "output": 5.00,  "cache_read": 0.05},
+  "gpt-6.2-sol":           {"input": 2.00, "output": 10.00, "cache_read": 0.10},
+  "gemini-3.8-flash":      {"input": 0.75, "output": 3.75},
+  "gemini-3.5-flash-lite": {"input": 0.30, "output": 2.50, "cache_read": 0.03}
 }

@@ -312,7 +312,38 @@ def run(manifest: Path, models: list[str], out_dir: Path, label: str = "",
 # --- reporting --------------------------------------------------------------
 
 
+def _fill_missing_costs(results_path: Path) -> None:
+    """Price rows that have tokens but no cost (e.g. a price added after the run).
+
+    Costs already in the file are kept as they are, so a run stays priced
+    at the rates it ran under. The file is rewritten only when a cost was added.
+    """
+    with results_path.open(newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        header, rows = reader.fieldnames or [], list(reader)
+    if "cost_usd" not in header:
+        return
+    filled = 0
+    for r in rows:
+        if (r.get("cost_usd") or "").strip():
+            continue
+        usage = {k: _num(r.get(k)) for k in USAGE_FIELDS}
+        if not any(usage.values()):
+            continue
+        c = cost_usd(r["model"], {k: v or 0 for k, v in usage.items()})
+        if c is not None:
+            r["cost_usd"] = c
+            filled += 1
+    if filled:
+        with results_path.open("w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=header)
+            writer.writeheader()
+            writer.writerows(rows)
+        print(f"Priced {filled} row(s) in {results_path} that had tokens but no cost.")
+
+
 def _read_results(out_dir: Path) -> list[dict[str, Any]]:
+    _fill_missing_costs(out_dir / "results.csv")
     with (out_dir / "results.csv").open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     # Keep the latest row per photo x model (a failed row may have been retried).
