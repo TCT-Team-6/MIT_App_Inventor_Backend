@@ -1,0 +1,41 @@
+file,latitude,longitude,country,place,category
+photos/t01.jpg,51.056666,3.719726,Belgium,"Ghent, Belgium",residential street
+photos/t02.jpg,46.049111,14.505222,Slovenia,"Ljubljana, Slovenia",old town street
+photos/t03.jpg,-33.042444,-71.625472,Chile,"Valparaiso, Chile",hillside street
+photos/t04.jpg,34.996476,135.780944,Japan,"Kyoto (Higashiyama), Japan",residential street
+photos/t06.jpg,41.689854,44.807257,Georgia,"Tbilisi, Georgia",old town street
+photos/t07.jpg,60.396108,5.324807,Norway,"Bergen, Norway",town street
+photos/t09.jpg,33.843089,-84.366164,USA,"Atlanta suburbs, Georgia, USA",suburban street
+photos/u01.jpg,37.553333,126.921944,South Korea,"Seoul (Mapo), South Korea",city street
+photos/u02.jpg,-23.561111,-46.655803,Brazil,"Sao Paulo, Brazil",city street
+photos/u03.jpg,-37.814614,144.96503,Australia,"Melbourne CBD, Australia",city laneway
+photos/u04.jpg,45.524582,-73.581914,Canada,"Montreal (Plateau), Canada",city street
+photos/u05.jpg,40.990716,29.027966,Turkey,"Istanbul (Kadikoy), Turkey",city street
+photos/u06.jpg,-1.285444,36.819611,Kenya,"Nairobi, Kenya",city street
+photos/n01.jpg,35.661338,139.667205,Japan,"Tokyo (Shimokitazawa), Japan",night street
+photos/r01.jpg,42.026389,-93.609167,USA,"Iowa, USA",farmland
+photos/r02.jpg,43.063962,11.610778,Italy,"Val d'Orcia, Tuscany, Italy",countryside
+photos/r03.jpg,53.462416,-9.7954,Ireland,"Connemara, Ireland",countryside
+photos/r04.jpg,43.581448,142.473245,Japan,"Biei, Hokkaido, Japan",farmland
+photos/r06.jpg,51.827916,-1.830615,England,"Cotswolds, England",countryside
+photos/m01.jpg,-51.002521,-73.052215,Chile,"Torres del Paine, Chile",mountains
+photos/m02.jpg,68.158279,13.692914,Norway,"Lofoten, Norway",mountains
+photos/m03.jpg,46.52253,11.85349,Italy,"Dolomites, Italy",mountain road
+photos/m04.jpg,52.217871,-117.224348,Canada,"Icefields Parkway, Canada",mountain road
+photos/m05.jpg,-43.731421,170.095439,New Zealand,"Southern Alps, New Zealand",mountain road
+photos/c01.jpg,37.089477,-8.251273,Portugal,"Algarve, Portugal",coast
+photos/c02.jpg,36.270421,-121.807976,USA,"Big Sur, California, USA",coast
+photos/c03.jpg,-34.09582,18.357821,South Africa,"Chapman's Peak, Cape Town, South Africa",coast
+photos/c04.jpg,-6.160678,39.18996,Tanzania,"Zanzibar, Tanzania",coast
+photos/c05.jpg,62.00927,-6.76936,Faroe Islands,Faroe Islands,coast
+photos/d01.jpg,29.571665,35.424556,Jordan,"Wadi Rum, Jordan",desert
+photos/d02.jpg,-22.910667,-68.200417,Chile,"Atacama, Chile",desert
+photos/f01.jpg,62.239727,25.749858,Finland,"Finnish Lakeland, Finland",lake
+photos/f02.jpg,47.901725,8.101866,Germany,"Black Forest, Germany",forest
+photos/f03.jpg,47.860917,-123.929525,USA,"Olympic Peninsula, Washington, USA",forest
+photos/x01.jpg,46.612889,7.902333,Switzerland (Bernese Oberland),"Small station, Switzerland (Bernese Oberland)",railway station
+photos/e01.jpg,-13.516431,-71.978217,Peru,"Cusco, Peru",old town street
+photos/e02.jpg,-42.881431,147.327683,Australia,"Hobart, Tasmania, Australia",town street
+photos/e03.jpg,64.14562,-21.939693,Iceland,"Reykjavik, Iceland",town street
+photos/e04.jpg,21.034726,105.851981,Vietnam,"Hanoi Old Quarter, Vietnam",city street
+photos/e06.jpg,31.629482,-7.989711,Morocco,"Marrakech medina, Morocco",city street

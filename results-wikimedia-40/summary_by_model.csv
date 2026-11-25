@@ -1,0 +1,3 @@
+model,photos,failed,acc_1km,acc_5km,acc_10km,acc_25km,acc_200km,acc_750km,acc_2500km,ai_only_acc_25km,ai_only_acc_750km,median_error_km,country_accuracy,mean_confidence,confidence_when_correct,confidence_when_wrong,brier_25km,median_seconds,total_input_tokens,total_output_tokens,total_api_calls,total_cost_usd,cost_per_photo_usd
+gpt-6.1-terra,40,0,0.725,0.8,0.85,0.9,0.975,1.0,1.0,0.925,1.0,0.3,0.825,0.772,0.786,0.65,0.1296,49.8,808886,175860,120,,
+gpt-6.2-sol,40,0,0.725,0.85,0.9,0.925,0.975,0.975,1.0,0.95,0.975,0.3,0.825,0.818,0.836,0.603,0.0972,38.5,654390,164902,120,,
