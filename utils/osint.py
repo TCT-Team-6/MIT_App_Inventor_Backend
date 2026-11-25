@@ -232,8 +232,14 @@ _LARGE_FEATURE_TYPES = {
     "valley", "canyon", "gorge", "national_park", "nature_reserve", "protected_area",
     "park_boundary", "mountain_range", "range", "ridge", "plateau", "massif", "desert",
     "forest", "wood", "lake", "reservoir", "sea", "ocean", "bay", "strait", "river",
-    "island", "archipelago", "peninsula", "glacier",
+    "archipelago", "peninsula", "glacier",
 }
+# Islands range from a rock to a continent, so their size decides, not their
+# type: "La Digue" (6 km across) pins a photo as well as a town does. One the
+# map stores as a single point, or with no size, still counts as large.
+_SIZED_FEATURE_TYPES = {"island", "islet"}
+# Below this a bounding box is a point, not an outline.
+POINT_EXTENT_KM = 0.1
 
 
 def _is_large_place(hit: dict[str, Any]) -> bool:
@@ -243,7 +249,13 @@ def _is_large_place(hit: dict[str, Any]) -> bool:
         (hit.get("kind") or "").lower(),
     }
     extent = hit.get("extent_km")
-    return bool(kinds & _LARGE_FEATURE_TYPES) or (extent is not None and float(extent) > BROAD_EXTENT_KM)
+    if extent is not None and float(extent) > BROAD_EXTENT_KM:
+        return True
+    if kinds & _LARGE_FEATURE_TYPES:
+        return True
+    if kinds & _SIZED_FEATURE_TYPES:
+        return extent is None or float(extent) < POINT_EXTENT_KM
+    return False
 
 
 # A named landmark within this distance of the answer pins it to a spot.

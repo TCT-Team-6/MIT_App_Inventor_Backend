@@ -197,6 +197,28 @@ class FusionTests(unittest.TestCase):
         self.assertTrue(spec["broad"])
         self.assertFalse(spec["precise"])
 
+    def test_small_island_is_a_specific_answer(self):
+        # A correct "La Digue" scored 14/100: the island is 6.3 km across, but
+        # every island counted as large, so the answer was marked vague.
+        import utils.osint as O
+
+        def spec_for(hit):
+            old = O.forward_geocode_candidates
+            try:
+                O.forward_geocode_candidates = lambda q, limit=3: [hit]
+                return O._answer_specificity("La Digue", {}, {})
+            finally:
+                O.forward_geocode_candidates = old
+
+        la_digue = {"addresstype": "island", "osm_type": "island", "extent_km": 6.31}
+        mahe = {"addresstype": "island", "osm_type": "island", "extent_km": 33.48}
+        point_island = {"addresstype": "island", "osm_type": "island", "extent_km": 0.01}
+        unknown_island = {"addresstype": "island", "osm_type": "island", "extent_km": None}
+        self.assertFalse(spec_for(la_digue)["broad"])
+        self.assertTrue(spec_for(mahe)["broad"])
+        self.assertTrue(spec_for(point_island)["broad"])
+        self.assertTrue(spec_for(unknown_island)["broad"])
+
     def test_recognised_landmark_is_not_text_support(self):
         import utils.osint as O
 
