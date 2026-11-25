@@ -3,7 +3,7 @@
 - **Run date:** 2026-11-25.
 - **Code:** upstream `main` at `a07f6d7` (GameKnight998/MIT_App_Inventor_Backend), the code merged in PR #1.
 - **Settings:** `eval/benchmark.py run`, 3 samples per photo, full run (not `--quick`, not `--agent`).
-- **Photos:** 40 open-licence, GPS-tagged photos from 40 different places in 30 countries.
+- **Photos:** 40 open-licence, GPS-tagged photos from 40 different places in 29 countries and territories.
   - **Categories:** city and town streets, suburbs, coasts, mountains, deserts, forests, farmland, one night photo and one railway station.
   - **Selection:** picked by hand to avoid photos of people, readable place-name signs and famous monuments. Some photos still contain a recognisable spot (see "Limits").
   - **Excluded:** none of the 9 places in `results-open-photos-all/`.
